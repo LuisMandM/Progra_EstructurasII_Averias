@@ -18,38 +18,6 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         boolean runnig = true;
-
-        Tecnico t_1 = new Tecnico("Pepe", 2);
-        Tecnico t_2 = new Tecnico("Juan", 1);
-
-        Averia av_1 = new Averia("Daño001", "Se daño",
-                LocalDateTime.of(2022, 12, 24, 17, 30), 2);
-        Averia av_2 = new Averia("Daño002", "Se daño",
-                LocalDateTime.of(2022, 1, 15, 3, 30), 1);
-        Averia av_3 = new Averia("Daño003", "Se daño",
-                LocalDateTime.of(2023, 1, 24, 12, 30), 3);
-        Averia av_4 = new Averia("Daño004", "Se daño",
-                LocalDateTime.of(2022, 1, 24, 0, 30), 3);
-
-        t_1.add_Averia(av_1);
-        t_1.add_Averia(av_3);
-
-        av_1.setTecnico_Asignado(t_1);
-        av_3.setTecnico_Asignado(t_1);
-
-        t_2.add_Averia(av_2);
-        av_2.setTecnico_Asignado(t_2);
-        t_2.add_Averia(av_4);
-        av_4.setTecnico_Asignado(t_2);
-
-        tecnicos_Alta.add(t_1);
-        tecnicos_Alta.add(t_2);
-
-        averias_Alta.add(av_1);
-        averias_Alta.add(av_2);
-        averias_Alta.add(av_3);
-        averias_Alta.add(av_4);
-
         do {
             System.out.print("\n---Menu Tecnicos-Averias---\n1. Alta de técnico.\n2. Gestión de averías" +
                     "\n3. Listados\n4. Salir\nOpcion: ");
